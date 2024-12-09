@@ -4,8 +4,8 @@ import com.e.Business.Ticket;
 
 public class ThirdLevel extends SupportHandler {
 
-    public ThirdLevel(int level){
-        this.level = level;
+    public ThirdLevel(){
+        this.level = 3;
     }
 
 

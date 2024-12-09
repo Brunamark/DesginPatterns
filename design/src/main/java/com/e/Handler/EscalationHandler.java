@@ -4,13 +4,13 @@ import com.e.Business.Ticket;
 
 public class EscalationHandler extends SupportHandler{
     
-    public EscalationHandler(int level){
-        this.level = level;
+    public EscalationHandler(){
+        this.level = Integer.MAX_VALUE;
     }
 
 
     @Override
     protected  void handleTicket(Ticket ticket, String message){
-        System.out.println("Escalation Level Process: " + ticket.getDescription() + " " + message);
+        System.out.println("Escalation Level Process: " + message);
     }
 }

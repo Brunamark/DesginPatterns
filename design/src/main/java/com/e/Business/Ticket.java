@@ -4,11 +4,13 @@ public class Ticket {
 
     private String description;
     private TicketComplexity ticketComplexity;
+    private int priority;
 
     
-    public Ticket(String description, TicketComplexity ticketComplexity) {
+    public Ticket(String description, TicketComplexity ticketComplexity, int priority) {
         this.description = description;
         this.ticketComplexity = ticketComplexity;
+        this.priority = priority;
     }
     public String getDescription() {
         return description;
@@ -21,6 +23,12 @@ public class Ticket {
     }
     public void setTicketComplexity(TicketComplexity ticketComplexity) {
         this.ticketComplexity = ticketComplexity;
+    }
+    public int getPriority() {
+        return priority;
+    }
+    public void setPriority(int priority) {
+        this.priority = priority;
     }
 
     

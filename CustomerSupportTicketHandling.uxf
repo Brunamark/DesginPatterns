@@ -1,12 +1,13 @@
-<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram note</help_text><element><id>UMLClass</id><coordinates><x>387</x><y>288</y><w>360</w><h>171</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>4</zoom_level><help_text>Space for diagram note</help_text><element><id>UMLClass</id><coordinates><x>244</x><y>268</y><w>192</w><h>76</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
 SupportHandler
 --
 # level: int
  # next: SupportHandler
+- passCount
 --
 
 #&lt;&lt;abstract&gt;&gt; handleTicket(ticket : Ticket, message  : String)
-+ passToTheNextLevel(level : int, message : String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>135</w><h>153</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
++ supporting(level : int, message : String, priority : int)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>92</x><y>140</y><w>60</w><h>68</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
 TicketComplexity
 --
 
@@ -17,32 +18,41 @@ HIGH(3)
 --
 + getLevel() : int
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>198</x><y>81</y><w>207</w><h>171</h></coordinates><panel_attributes>Ticket
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>180</x><y>176</y><w>92</w><h>76</h></coordinates><panel_attributes>Ticket
 --
 - ticketComplexty : TicketComplexity
 - description : String
+- prioity: int
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>54</x><y>144</y><w>162</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>160;60;10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>513</y><w>207</w><h>171</h></coordinates><panel_attributes>SecondLevel
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>116</x><y>204</y><w>72</w><h>32</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>160;60;10;60;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>252</x><y>368</y><w>92</w><h>76</h></coordinates><panel_attributes>SecondLevel
 --
 
 --
 #  handleTicket(ticket : Ticket, message  : String)
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>135</x><y>513</y><w>207</w><h>171</h></coordinates><panel_attributes>FirtsLevel
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>152</x><y>368</y><w>92</w><h>76</h></coordinates><panel_attributes>FirtsLevel
 --
 
 --
 
 #  handleTicket(ticket : Ticket, message  : String)
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>810</x><y>513</y><w>207</w><h>171</h></coordinates><panel_attributes>EscalationHandler
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>452</x><y>368</y><w>92</w><h>76</h></coordinates><panel_attributes>EscalationHandler
 --
 
 --
-#  handleTicket(ticket : Ticket, message  : String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>585</x><y>513</y><w>207</w><h>171</h></coordinates><panel_attributes>ThridLevel
+#  handleTicket(ticket : Ticket, message  : String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>352</x><y>368</y><w>92</w><h>76</h></coordinates><panel_attributes>ThridLevel
 --
 
 --
-#  handleTicket(ticket : Ticket, message  : String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>189</x><y>450</y><w>234</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>240;10;240;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>657</x><y>450</y><w>27</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>468</x><y>450</y><w>27</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>711</x><y>450</y><w>207</w><h>81</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;210;50;210;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>855</x><y>81</y><w>189</w><h>171</h></coordinates><panel_attributes>Client
+#  handleTicket(ticket : Ticket, message  : String)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>176</x><y>340</y><w>104</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>240;10;240;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>384</x><y>340</y><w>12</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>340</y><w>12</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>408</x><y>340</y><w>92</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;210;50;210;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>472</x><y>176</y><w>84</w><h>76</h></coordinates><panel_attributes>Client
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>396</x><y>135</y><w>468</w><h>36</h></coordinates><panel_attributes>lt=&lt;-
-&lt; use</panel_attributes><additional_attributes>10;20;500;20</additional_attributes></element><element><id>Relation</id><coordinates><x>567</x><y>198</y><w>306</w><h>108</h></coordinates><panel_attributes>lt=&lt;-
-&lt; use</panel_attributes><additional_attributes>10;100;10;20;320;20</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>268</x><y>200</y><w>208</w><h>16</h></coordinates><panel_attributes>lt=&lt;-
+&lt; use</panel_attributes><additional_attributes>10;20;500;20</additional_attributes></element><element><id>Relation</id><coordinates><x>344</x><y>228</y><w>136</w><h>48</h></coordinates><panel_attributes>lt=&lt;-
+&lt; use</panel_attributes><additional_attributes>10;100;10;20;320;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>84</x><y>276</y><w>84</w><h>52</h></coordinates><panel_attributes>DynamicHandlerChain 
+--
+- firstHandler : SupportHandler 
+--
++ addHandler(handler : SupportHandler )
++ removeHandler( handler  : SupportHandler )
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>164</x><y>296</y><w>88</w><h>20</h></coordinates><panel_attributes>lt=&lt;-
+
+use &gt;</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element></diagram>

@@ -3,8 +3,8 @@ package com.e.Handler;
 import com.e.Business.Ticket;
 
 public class SecondLevel extends SupportHandler{
-    public SecondLevel(int level){
-        this.level = level;
+    public SecondLevel(){
+        this.level = 2;
     }
 
 

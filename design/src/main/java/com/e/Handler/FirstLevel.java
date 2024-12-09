@@ -3,8 +3,8 @@ package com.e.Handler;
 import com.e.Business.Ticket;
 
 public class FirstLevel extends SupportHandler{
-    public FirstLevel(int level){
-        this.level = level;
+    public FirstLevel(){
+        this.level = 1;
     }
     @Override
     protected  void handleTicket(Ticket ticket, String message){
